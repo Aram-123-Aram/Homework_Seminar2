@@ -1,6 +1,7 @@
 '''
 Реализуйте алгоритм перемешивания списка. (рандомно поменять местами элементы списка между собой)
 '''
+'''
 list = ['Hi', 456, 4.5, [2, 4, 1,] ]
 print(list)
 
@@ -15,3 +16,15 @@ for i in range(len(list)):
         list[i1]=list[i2]
         list[i2]=temp
 print(list)
+'''
+list = ['Hi', 456, 4.5, [2, 4, 1,] ]
+print(f"    list = {list}")
+
+import random
+for i in range(len(list)):
+    i1 = random.randint(0,3)
+    temp = list[i]
+    list[i]=list[i1]
+    list[i1]=temp
+print(f"new_list = {list}")
+
